@@ -1,15 +1,11 @@
 package com.srk.swt.controller;
+
 import org.eclipse.core.databinding.DataBindingContext;
+import org.eclipse.core.databinding.beans.typed.BeanProperties;
 import org.eclipse.core.databinding.observable.value.IObservableValue;
-import org.eclipse.jface.databinding.swt.SWTObservables;
-import org.eclipse.swt.SWT;
+import org.eclipse.jface.databinding.swt.typed.WidgetProperties;
 
-import com.srk.swt.model.SrkByte;
 import com.srk.swt.view.SrkDataBinding;
-
-import org.eclipse.core.databinding.UpdateValueStrategy;
-import org.eclipse.core.databinding.beans.BeansObservables;
-
 
 public class SrkDataBindingController {
 	private SrkDataBinding m_srkDataBinding;
@@ -29,17 +25,21 @@ public class SrkDataBindingController {
 	}
 
 	private DataBindingContext initDataBindings() {
-		IObservableValue bit0ObserveWidget = SWTObservables.observeSelection(m_srkDataBinding.getBit0Button());
-		IObservableValue bit0ObserveValue = BeansObservables.observeValue(srkByte, "bit0");
-		IObservableValue bit1ObserveWidget = SWTObservables.observeSelection(m_srkDataBinding.getBit1Button());
-		IObservableValue bit1ObserveValue = BeansObservables.observeValue(srkByte, "bit1");
-		IObservableValue bit2ObserveWidget = SWTObservables.observeSelection(m_srkDataBinding.getBit2Button());
-		IObservableValue bit2ObserveValue = BeansObservables.observeValue(srkByte, "bit2");
-		IObservableValue bit3ObserveWidget = SWTObservables.observeSelection(m_srkDataBinding.getBit3Button());
-		IObservableValue bit3ObserveValue = BeansObservables.observeValue(srkByte, "bit3");
-		//
+		IObservableValue bit0ObserveWidget = WidgetProperties.buttonSelection()
+				.observe(m_srkDataBinding.getBit0Button());
+		IObservableValue bit0ObserveValue = BeanProperties.value("bit0").observe(srkByte);
+		IObservableValue bit1ObserveWidget = WidgetProperties.buttonSelection()
+				.observe(m_srkDataBinding.getBit1Button());
+		IObservableValue bit1ObserveValue = BeanProperties.value("bit1").observe(srkByte);
+		IObservableValue bit2ObserveWidget = WidgetProperties.buttonSelection()
+				.observe(m_srkDataBinding.getBit2Button());
+		IObservableValue bit2ObserveValue = BeanProperties.value("bit2").observe(srkByte);
+		IObservableValue bit3ObserveWidget = WidgetProperties.buttonSelection()
+				.observe(m_srkDataBinding.getBit3Button());
+		IObservableValue bit3ObserveValue = BeanProperties.value("bit3").observe(srkByte);
+
 		DataBindingContext bindingContext = new DataBindingContext();
-		//
+		
 		bindingContext.bindValue(bit0ObserveWidget, bit0ObserveValue, null, null);
 		bindingContext.bindValue(bit1ObserveWidget, bit1ObserveValue, null, null);
 		bindingContext.bindValue(bit2ObserveWidget, bit2ObserveValue, null, null);
