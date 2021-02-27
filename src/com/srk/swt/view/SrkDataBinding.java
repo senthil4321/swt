@@ -14,6 +14,7 @@ import org.eclipse.swt.widgets.Shell;
 import com.srk.swt.controller.SrkDataBindingController;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.core.databinding.Binding;
 
 public class SrkDataBinding extends Shell {
 
@@ -87,11 +88,6 @@ public class SrkDataBinding extends Shell {
 		bit3Button = new Button(this, SWT.CHECK);
 		bit3Button.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
 
-		m_controller = new SrkDataBindingController(this);
-		new Label(this, SWT.NONE);
-		new Label(this, SWT.NONE);
-		new Label(this, SWT.NONE);
-		
 		btnNewButton = new Button(this, SWT.NONE);
 		btnNewButton.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -100,6 +96,13 @@ public class SrkDataBinding extends Shell {
 			}
 		});
 		btnNewButton.setText("Update Model");
+		
+		m_controller = new SrkDataBindingController(this);
+		new Label(this, SWT.NONE);
+		new Label(this, SWT.NONE);
+		new Label(this, SWT.NONE);
+		
+
 	}
 
 	@Override
