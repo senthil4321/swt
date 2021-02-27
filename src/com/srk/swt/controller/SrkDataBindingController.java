@@ -35,16 +35,16 @@ public class SrkDataBindingController {
 
     private DataBindingContext initDataBindings() {
 	IObservableValue<Boolean> bit0ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit0Button());
-	IObservableValue bit0ObserveValue = BeanProperties.value("bit0").observe(srkByte);
-	IObservableValue bit1ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit1Button());
-	IObservableValue bit1ObserveValue = BeanProperties.value("bit1").observe(srkByte);
-	IObservableValue bit2ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit2Button());
-	IObservableValue bit2ObserveValue = BeanProperties.value("bit2").observe(srkByte);
-	IObservableValue bit3ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit3Button());
-	IObservableValue bit3ObserveValue = BeanProperties.value("bit3").observe(srkByte);
+	IObservableValue<Boolean> bit0ObserveValue = BeanProperties.value("bit0",Boolean.class).observe(srkByte);
+	IObservableValue<Boolean> bit1ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit1Button());
+	IObservableValue<Boolean> bit1ObserveValue = BeanProperties.value("bit1",Boolean.class).observe(srkByte);
+	IObservableValue<Boolean> bit2ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit2Button());
+	IObservableValue<Boolean> bit2ObserveValue = BeanProperties.value("bit2",Boolean.class).observe(srkByte);
+	IObservableValue<Boolean> bit3ObserveWidget = WidgetProperties.buttonSelection().observe(m_srkDataBinding.getBit3Button());
+	IObservableValue<Boolean> bit3ObserveValue = BeanProperties.value("bit3",Boolean.class).observe(srkByte);
 
 	
-	IObservableValue<String> properyChanged = PojoProperties.value("Name.name",String.class).observe(name);
+	IObservableValue<String> properyChanged = PojoProperties.value("name",String.class).observe(name);
 	
 	properyChanged.addValueChangeListener(new IValueChangeListener<String>() {
 
@@ -71,8 +71,8 @@ public class SrkDataBindingController {
 	bindingContext.bindValue(bit1ObserveWidget, bit1ObserveValue, null, null);
 	bindingContext.bindValue(bit2ObserveWidget, bit2ObserveValue, null, null);
 	bindingContext.bindValue(bit3ObserveWidget, bit3ObserveValue, null, null);
-	bindingContext.bindValue(bit3ObserveWidget, properyChanged, null, null);	
-	//
+		
+	
 	return bindingContext;
     }
 
