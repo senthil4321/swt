@@ -92,7 +92,7 @@ public class SrkDataBinding extends Shell {
 		btnNewButton.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-			    m_controller.getSrkByte().setBit0(false);
+			    m_controller.getSrkByte().setBit0(!m_controller.getSrkByte().isBit0());
 			    m_controller.getName().setName("SRK");
 			}
 		});
