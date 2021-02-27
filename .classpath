@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.osgi_3.15.100.v20191114-1701.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.osgi_3.15.100.v20191114-1701.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.commands_3.9.600.v20191122-2109.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.core.commands_3.9.600.v20191122-2109.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.equinox.common_3.10.600.v20191004-1420.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.equinox.common_3.10.600.v20191004-1420.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.equinox.registry_3.8.600.v20191017-2055.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.equinox.registry_3.8.600.v20191017-2055.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.runtime_3.17.0.v20191122-2104.jar" sourcepath="/home/senthil/.sourceattacher/org.eclipse.core.runtime-3.17.0-sources.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.text_3.10.0.v20191122-2108.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.text_3.10.0.v20191122-2108.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.swt.gtk.linux.x86_64_3.113.0.v20191204-0601.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.swt.gtk.linux.x86_64_3.113.0.v20191204-0601.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.jface_3.18.0.v20191122-2109.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.jface_3.18.0.v20191122-2109.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.jface.text_3.16.100.v20191203-1634.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.jface.text_3.16.100.v20191203-1634.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.ui.workbench_3.117.0.v20191126-1131.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.ui.workbench_3.117.0.v20191126-1131.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/com.ibm.icu_64.2.0.v20190507-1337.jar" sourcepath="/snap/eclipse/48/plugins/com.ibm.icu_64.2.0.v20190507-1337.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.ui.forms_3.8.200.v20191114-0830.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.ui.forms_3.8.200.v20191114-0830.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.databinding_1.7.700.v20191122-2109.jar" sourcepath="/home/senthil/Downloads/org.eclipse.core.databinding.source_1.7.700.v20191122-2109.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.databinding.beans_1.6.0.v20191118-0932.jar" sourcepath="/home/senthil/Downloads/org.eclipse.core.databinding.beans.source_1.6.0.v20191118-0932.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.databinding.observable_1.8.100.v20191118-0932.jar" sourcepath="/snap/eclipse/48/plugins/org.eclipse.core.databinding.observable_1.8.100.v20191118-0932.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.core.databinding.property_1.7.200.v20191105-1311.jar" sourcepath="/home/senthil/Downloads/org.eclipse.core.databinding.property.source_1.7.200.v20191105-1311.jar"/>
+	<classpathentry kind="lib" path="/snap/eclipse/48/plugins/org.eclipse.jface.databinding_1.9.200.v20191113-1050.jar" sourcepath="/home/senthil/Downloads/org.eclipse.jface.databinding.source_1.9.200.v20191113-1050.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

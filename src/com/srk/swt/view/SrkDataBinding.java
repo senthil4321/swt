@@ -93,6 +93,7 @@ public class SrkDataBinding extends Shell {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 			    m_controller.getSrkByte().setBit0(false);
+			    m_controller.getName().setName("SRK");
 			}
 		});
 		btnNewButton.setText("Update Model");
