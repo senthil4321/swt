@@ -1,6 +1,7 @@
 package com.srk.swt.view;
 
 import org.eclipse.core.databinding.observable.Realm;
+import org.eclipse.jface.databinding.swt.DisplayRealm;
 import org.eclipse.jface.databinding.swt.SWTObservables;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
@@ -26,7 +27,7 @@ public class SrkDataBinding extends Shell {
 	 */
 	public static void main(String args[]) {
 		Display display = new Display();
-		Realm.runWithDefault(SWTObservables.getRealm(display), new Runnable() {
+		Realm.runWithDefault(DisplayRealm.getRealm(display), new Runnable() {
 			public void run() {
 				try {
 					Display display = Display.getDefault();
